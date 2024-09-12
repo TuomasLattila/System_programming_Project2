@@ -73,7 +73,7 @@ void readFromFile(char *pSearchTerm, char *pFileName) {
     __ssize_t read = -1;
 
     if ((file = fopen(pFileName, "r")) == NULL) {
-        fprintf(stderr, "error: cannot open file '%s'\n", pFileName);
+        fprintf(stderr, "my-grep: cannot open file\n");
         exit(1);
     };
     while ((read = getline(&pRow, &len, file)) != -1) {

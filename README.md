@@ -1,9 +1,10 @@
 # System_programming_Project2
 Programs:
-**my-cat**: 
 <br>
-**my-grep**: 
+**my-cat**: Reads one or multiple files, and prints the content.
 <br>
-**my-zip**: 
+**my-grep**: Looks through one or multiple files, and prints all rows containing the search term.
 <br>
-**my-unzip**: 
+**my-zip**: Compresses one or multiple files to RLE (run-length encoding) form. Writes to stdout.
+<br>
+**my-unzip**: Decomresses RLE form zip file into the original text form. Writes to stdout.

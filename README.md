@@ -1,5 +1,5 @@
 # System_programming_Project2
-Programs:
+Utilities:
 <br>
 **my-cat**: Reads one or multiple files, and prints the content.
 <br>

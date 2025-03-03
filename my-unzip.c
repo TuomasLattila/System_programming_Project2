@@ -7,13 +7,12 @@ void uncompress(char *pFileName);
 int main(int argc, char *argv[]) {
     
     if (argc < 2) {//check if no files are given
-        printf("my-unzip: file1 [file2 ...]\n");
+        printf("wunzip: file1 [file2 ...]\n");
         exit(1);
     }
     for (int i = 1; i < argc; i++) { //loop through files and uncopmres them into one file
         uncompress(argv[i]);
     }
-    //printf("\n");
     return 0;
 }
 
@@ -23,7 +22,7 @@ void uncompress(char *pFileName) {
     int count;
 
     if ((file = fopen(pFileName, "rb")) == NULL) { //open compressed file
-        fprintf(stderr, "error: cannot open file '%s'\n", pFileName);
+        fprintf(stdout, "error: cannot open file '%s'\n", pFileName);
         exit(1);
     }
     
@@ -32,7 +31,6 @@ void uncompress(char *pFileName) {
             printf("%c", c);
         }
     }
-    printf("\n");
     fclose(file);
     return;
 }
